@@ -1,0 +1,179 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main{ 
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  background-color:greenyellow ;
+  
+}
+
+.header .boxa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  color: white;
+  font-size: 20x;
+  font-weight: bold;
+}
+
+.content{
+  display: flex;
+  height: 60%;
+  width: 100%;
+  background-color: orange;
+
+}
+
+
+.content .left{
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.boxb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 80px ;
+  font-size: 20x;
+  font-weight: bold;
+}
+
+
+.content .right{
+  width: 50%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.right .row1{
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+  display: flex;
+}
+
+.row1 .boxc{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20x;
+    font-weight: bold;
+  }
+
+ .row1 .boxd{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20x;
+  font-weight: bold;
+  }
+
+  .right .row2{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    display: flex;
+  }
+
+  .row2 .boxe{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20x;
+    font-weight: bold;
+  }
+  
+  .row2 .boxf{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20x;
+  font-weight: bold;
+  }
+  
+  
+.boxc{
+  background-color: blue;
+}
+
+.boxd{
+  background-color: rgb(10, 155, 10);
+}
+
+.boxe{
+  background-color: rgb(236, 169, 45);
+}
+
+.boxf{
+  background-color: rgb(232, 11, 103);
+}
+
+.footer{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(145, 145, 218);
+  }
+ 
+ .boxg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 50px;
+  font-size: 20x;
+  font-weight: bold;
+ }
+
+ @media (max-width: 768px) {
+  .content {
+    flex-direction: column; 
+  }
+
+  .content .left,
+  .content .right {
+    width: 100%; 
+    height: 50%; 
+  }
+
+  .right .row1,
+  .right .row2 {
+    flex-direction: column; 
+    height: 50%; 
+  }
+
+  .row1 .boxc,
+  .row1 .boxd,
+  .row2 .boxe,
+  .row2 .boxf {
+    width: 100%; 
+    height: 25%; 
+    padding: 20px; 
+  }
+}
